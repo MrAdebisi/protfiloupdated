@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/navbar.css"/>
+    <link rel="shorcut icon" type="image/x-icon" href="favicon.ico">
+    <title>Contact Us</title>
+</head>
+<body>
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler" />
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+          <div>
+            <div class="nav-bar">
+              <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="container">
+        <div class="showcase">
+            <div class="content">
+                <div class="item" id="left">
+                    <div class="overlayLeft">
+    
+                    </div>
+                    <img src="img/portrait.svg" alt="">
+                </div>
+                <div class="item" id="right">
+                    <form action="contact.php" method="POST">
+                        <div class="formHead">
+                            <h1>Need A Website?</h1>
+                            <hr>
+                        </div>
+                        <div id="pg1" class="">
+                            <div class="userInput">
+                                <label for="" class="inputItem">Business Name: </label>
+                                <input name="name" type="text" class="inputItem" placeholder="Input Answer Here. . .">
+                            </div>
+                            <div class="userInput">
+                                <label for="" class="inputItem">What is your Budget: </label>
+                                <input name="budget" type="text" class="inputItem" placeholder="Input Answer Here. . .">
+                            </div>
+                            <div class="userInput">
+                                <label for="" class="inputItem">What does your business do ? : </label>
+                                <textarea name="whatBusinessDoes" class="inputItem" cols="50" rows="5"></textarea>
+                            </div>
+                            <div class="userInput">
+                                <label for="" class="inputItem">What makes your business stand out ? : </label>
+                                <textarea name="uniqueAboutBusiness" class="inputItem" cols="50" rows="5"></textarea>
+                            </div>
+                            <div class="userInput">
+                                <label for="" class="inputItem">Who is your ideal customer ? : </label>
+                                <textarea name="idealCustomer" class="inputItem" cols="50" rows="5"></textarea>
+                            </div>
+                            <div class="userInput">
+                                <label for="" class="inputItem">Who are your competitors <br> (if applicable) ? : </label>
+                                <textarea name="competitors" class="inputItem" cols="50" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <div id="pg2" class="hide">
+                            <div class="userInput">
+                                <label for="" class="inputItem">Contact Email: </label>
+                                <input name="email" type="email" class="inputItem" placeholder="Input Answer Here. . ." name="name">
+                            </div>
+                            <div class="userInput">
+                                <label for="" class="inputItem">Do you have an existing website, and what do you like and dislike about it? </label>
+                                <textarea name="haveWebsite" class="inputItem" cols="50" rows="5"></textarea>
+                            </div>
+                            <div class="userInput">
+                                <label for="" class="inputItem">Are you active on social media? :</label>
+                                <textarea name="activeSocialMedia" class="inputItem" cols="50" rows="5"></textarea>
+                            </div>
+                            <div class="userInput">
+                                <input type="submit" value="send" class="submit">
+                            </div>
+                        </div>
+                        <div class="formNav">
+                            <h2 id="next" class="btn">Next</h2>
+                            <h2 id="prev" class="btn hide">Prev</h2>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="app.js"></script>
+<footer>
+    <script src="js/app.js"></script>
+    <script src="js/index.js"></script>
+</footer>
+</body>
+</html>

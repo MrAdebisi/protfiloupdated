@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+.about{
+    height: 50vh;
+    width: 100%;
+    background: url(../img/About.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about h1{
+    font-size: 5em;
+    font-family: 'Arizonia', cursive;
+    text-align: center;
+}
+.my-info{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+    justify-content: left;
+    align-items: center;
+    padding: 20px;
+}
+.my-info p{
+    font-size: 1em;
+    margin: 5px;
+    color: black;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+}
+.heading{
+    padding: 20px 0 10px 0;
+    border-bottom: 2px solid grey;
+    display: inline-block;
+    margin-left: 25px;
+}
+@media only screen and (max-width:700px){
+    .my-info{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (max-width:400px){
+    .about h1{
+        font-size: 4em;
+    }
+}
+
+

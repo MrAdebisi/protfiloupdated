@@ -1,0 +1,90 @@
+.mainScroll{
+    height: 60vh;
+    width: 60%;
+    margin: 50px auto;
+    background-color: aliceblue;
+    border-radius: 40px;
+    position: relative;
+    padding: 20px;
+}
+.innerScroll{
+    max-height: 100%;
+    overflow-y: auto;
+}
+.innerScroll::-webkit-scrollbar{
+    width: 8px;
+    background-color: transparent;
+}
+.innerScroll::-webkit-scrollbar-thumb{
+    background-color:rgb(112, 127, 139);
+    border-radius: 10px;
+}
+.innerScroll::-webkit-scrollbar-thumb:hover{
+    background-color:rgb(158, 178, 194);
+}
+.projectContent{
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.project{
+    flex: 1;
+    height: 300px;
+    max-width: 360px;
+    min-width: 300px;
+    margin: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.project img{
+    width: 100%;
+    height: 200px;
+}
+.textInfo{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.textInfo h1{
+    background-image: linear-gradient(to bottom, rgb(170, 238, 255),rgb(216, 237, 245));
+    padding: 2px 15px;
+    color: white;
+    font-size: calc(32px + 0.2vw);
+    margin: 10px;
+    border-radius: 50%;
+    font-family:serif;
+    transition: all 300ms ease;
+}
+
+.textInfo p{
+    min-width: 100px;
+    width: 250px;
+    text-align: left;
+}
+.textInfo a{
+    margin: 0 15px;
+    font-weight: bold;
+    font-family: 'Poppins',sans-serif;
+    text-decoration: none;
+    color: black;
+}
+.textInfo a i{
+    border: solid rgb(10, 78, 90);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    margin: 0 2px;
+}
+.textInfo a:hover > i{
+    transition: 200ms ease;
+    margin: 0 10px;
+}
