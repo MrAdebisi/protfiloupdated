@@ -42,12 +42,12 @@ body{
 .nav-bar{
     position: absolute;
     z-index: 5;
-    height: 10vh;
+    height: 9vh;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: left;
     width:100vw;
-    padding: 50px;
     border-bottom:2px solid rgb(248, 248, 248) ;
 }
 .sticky{
